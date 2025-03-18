@@ -1,9 +1,9 @@
 <div class="container">
     <form action="" class="formulario">
-        <input type="text" class="valores">
-        <input type="text" class="valores">
-        <button class="btn">SOMAR</button>
+        <input type="number" class="valores" id="num1" [(ngModel)]="num1" name="num1">
+        <input type="number" class="valores" id="num2" [(ngModel)]="num2" name="num2">
+        <button type="button" class="btn" (click)="OnClick()">SOMAR</button>
        
-        <label for="btn_somar" id="resultado">0.0</label>
+        <label id="resultado">{{soma}}</label>
     </form>
 </div>
